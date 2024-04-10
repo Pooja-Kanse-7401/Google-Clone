@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone : Make search easier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="nav" class="d-flex justify-content-end position-fixed">
+            <ul class="d-flex  align-item-center mt-2">
+                <li class="nav-item"><a href="https://www.google.com/gmail/about/" class="nav-link active">Gmail</a>
+                </li>
+                <li class="nav-item"><a href="https://www.google.com/imghp?hl=en&ogbl"
+                        class="nav-link active">Images</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active" onclick="drop()"><img src="/Assets/Icon.png"
+                            alt=""></a></li>
+                <a
+                    href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=en&ifkv=ARZ0qKIjr3naGznd0pXJ880HTNcoBPr5zOXRw2gAz0YG04KRrqlNfneYpg86XIptdm4c38EjYPk0Gw&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1460603404%3A1712053828735658&theme=mn&ddm=0">
+                    <button class="btn btn-primary">Sign In</button></a>
+
+            </ul>
+
+        </div>
+        <div id="drop">
+            <div id="drop-scroll">
+                <i class="fa-regular fa-circle-xmark" class="close-feedback" onclick="closeForm();"></i>
+                <div id="scroll-item">
+                    <!-- <div> -->
+                    <a class="drop-items" href="https://www.google.com/account/about/?hl=en-US">
+                        <img src="/Assets/accounts.png" alt="">
+                        <p>Account</p>
+                    </a>
+                    <!-- </div>             -->
+                    <a href="" class="drop-items">
+                        <img src="/Assets/google.png" alt="">
+                        <p>Search</p>
+                    </a>
+
+                    <a class="drop-items"
+                        href="https://www.google.com/maps/@18.5490758,73.9242136,15z?authuser=0&entry=ttu">
+                        <img src="/Assets/maps.png" alt="">
+                        <p>Maps</p>
+                    </a>
+
+                    <a class="drop-items" href="https://www.youtube.com/">
+                        <img src="/Assets/youtube.png" alt="">
+                        <p>YouTube</p>
+                    </a>
+
+                    <a class="drop-items" href="https://play.google.com/store/games?device=windows&pli=1">
+                        <img src="/Assets/play store.png" alt="">
+                        <p>Play</p>
+                    </a>
+
+                    <a class="drop-items" href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en">
+                        <img src="/Assets/news.png" alt="">
+                        <p>News</p>
+                    </a>
+
+                    <a class="drop-items" href="https://www.google.com/gmail/about/">
+                        <img src="/Assets/gmail.png" alt="">
+                        <p>Gmail</p>
+                    </a>
+
+                    <a class="drop-items" href="https://meet.google.com/?hs=197&authuser=0">
+                        <img src="/Assets/meet.png" alt="">
+                        <p>Meet</p>
+                    </a>
+
+                    <a class="drop-items" href="https://workspace.google.com/products/chat/">
+                        <img src="/Assets/chat.png" alt="">
+                        <p>Chat</p>
+                    </a>
+
+                    <a class="drop-items"
+                        href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcontacts.google.com%2F&followup=https%3A%2F%2Fcontacts.google.com%2F&ifkv=ARZ0qKKK36S0OyJTBFNRHHCY_x-ovSrM9u8XPneQJWVI3c3QbfS5okBXd_zYWIzrpzEsebowpjoVzw&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-804817794%3A1712388584652996&theme=mn&ddm=0">
+                        <img src="/Assets/contacts.png" alt="">
+                        <p>Contacts</p>
+                    </a>
+
+                    <a class="drop-items" href="https://www.google.com/intl/en-US/drive/">
+                        <img src="/Assets/drive.png" alt="">
+                        <p>Drive</p>
+                    </a>
+
+                    <a class="drop-items" href="https://workspace.google.com/products/calendar/?hl=en-US">
+                        <img src="/Assets/calender.png" alt="">
+                        <p>Calender</p>
+                    </a>
+
+                    <a class="drop-items" href="https://translate.google.com/">
+                        <img src="/Assets/translator'.png" alt="">
+                        <p>Translator</p>
+                    </a>
+
+                    <a class="drop-items" href="https://www.google.com/photos/about/">
+                        <img src="/Assets/photos.png" alt="">
+                        <p>Photos</p>
+                    </a>
+
+                    <a class="drop-items" href="https://shopping.google.com/?nord=1">
+                        <img src="/Assets/shopping.png" alt="">
+                        <p>Shopping</p>
+                    </a>
+                </div>
+                <button class="btn btn-outline-secondary m-4"><a href="https://about.google/products/"
+                        class="text-primary">More from Google</a></button>
+            </div>
+        </div>
+        <div id="home">
+            <img src="/Assets/googleImage.png" alt="" id="google">
+            <div id="search-bar" class="d-flex justify-content-between align-item-center">
+                <i class="fa-sharp fa-solid fa-magnifying-glass pt-2" style="color: #b9b8b8;"></i>
+                <input id="search" type="text" placeholder="Search Google or type a URL">
+                <div class="d-flex">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-1024.png" alt="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/028/766/354/original/google-camera-lens-icon-symbol-free-png.png"
+                        alt="">
+                </div>
+            </div>
+
+
+            <div class="result">
+                <form action="result.html">
+                    <div id="top">
+                        <div id="inside-top">
+                            <p class="result" style="cursor: pointer;" onclick="search();">All</p>
+                            <p id="search-image" style="cursor: pointer;" onclick="imageSearch()" class="d-flex">Images
+                            </p>
+                        </div>
+
+                        <hr>
+                        <div id="google-search"></div>
+                        <div id="images"></div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="buttons">
+                <button class="btn" onclick="search()">Google Search</button>
+                <button class="btn"><a href="https://doodles.google/">I'm Feeling Lucky</a></button>
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <p class="p-3 pb-1">India</p>
+            <hr>
+            <div id="bottom" class="d-flex justify-content-between align-item-center flex-wrap">
+                <div id="left">
+                    <ul class="d-flex">
+                        <li><a
+                                href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                        </li>
+                        <li><a
+                                href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                        </li>
+                        <li><a href="https://www.google.com/intl/en_in/business/">Business</a></li>
+                        <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                    </ul>
+                </div>
+                <div id="right">
+                    <ul class="d-flex">
+                        <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+                        <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                        <li id="main-setting" onclick="showMenu()">
+                            <a href="#">Settings
+                                <ul id="settings">
+                                    <i class="fa-regular fa-circle-xmark" class="close-feedback"
+                                        onclick="closeForm();"></i>
+
+                                    <li><a href="https://www.google.com/preferences?hl=en-IN&fg=1" target="_self">Search
+                                            settings</a></li>
+                                    <li><a href="https://www.google.com/advanced_search?hl=en-IN&fg=1">Advance
+                                            search</a>
+                                    </li>
+                                    <li><a
+                                            href="https://myaccount.google.com/yourdata/search?utm_source=googlemenu&fg=1&pli=1">Your
+                                            data in earch</a></li>
+                                    <li><a
+                                            href="https://myactivity.google.com/product/search?utm_source=google&hl=en-IN&fg=1">Search
+                                            history</a></li>
+                                    <li><a
+                                            href="https://support.google.com/websearch/?visit_id=638475527438494059-1572812176&hl=en-IN&rd=2#topic=3378866">Search
+                                            help</a></li>
+                                    <li>
+                                        <a href="#" id="send-feedback" onclick="sendFeedback()">Send feedback</a>
+                                        <div class="close-feedback">
+
+                                        </div>
+
+                                    </li>
+                                    <hr>
+                                    <li id="dark" onclick="darkTheme()">Dark theme : Off</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

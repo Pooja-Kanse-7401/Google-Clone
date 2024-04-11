@@ -160,6 +160,9 @@ li{
     height: 90%;
     background-color: var(--primary-color)
 }
+#search-bar input{
+    color: var(--third-color);
+}
 #search-bar img{
     background-color: var(--primary-color);
     height: 35px;

@@ -153,6 +153,9 @@ li{
     margin: 20px 0px;
     padding: 5px 10px;
 }
+#search-bar input{
+    color: var(--third-color);
+}
 #search{
     border: none;
     outline: none;
